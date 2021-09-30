@@ -15,6 +15,8 @@
 		72E1D0DC270561FD00F83F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E1D0DA270561FD00F83F3D /* LaunchScreen.storyboard */; };
 		72E1D0E7270561FD00F83F3D /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D0E6270561FD00F83F3D /* MVPTests.swift */; };
 		72E1D0F2270561FD00F83F3D /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D0F1270561FD00F83F3D /* MVPUITests.swift */; };
+		72E1D1032705633E00F83F3D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D1022705633E00F83F3D /* Presenter.swift */; };
+		72E1D1052705637900F83F3D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D1042705637900F83F3D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		72E1D0ED270561FD00F83F3D /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E1D0F1270561FD00F83F3D /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		72E1D0F3270561FD00F83F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E1D1022705633E00F83F3D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		72E1D1042705637900F83F3D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		72E1D0CE270561F900F83F3D /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				72E1D1012705622400F83F3D /* View */,
+				72E1D1002705621700F83F3D /* Model */,
+				72E1D0FF2705620B00F83F3D /* Presenter */,
 				72E1D0CF270561F900F83F3D /* AppDelegate.swift */,
 				72E1D0D1270561F900F83F3D /* SceneDelegate.swift */,
-				72E1D0D3270561F900F83F3D /* ViewController.swift */,
 				72E1D0D5270561F900F83F3D /* Main.storyboard */,
 				72E1D0D8270561FD00F83F3D /* Assets.xcassets */,
 				72E1D0DA270561FD00F83F3D /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				72E1D0F3270561FD00F83F3D /* Info.plist */,
 			);
 			path = MVPUITests;
+			sourceTree = "<group>";
+		};
+		72E1D0FF2705620B00F83F3D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				72E1D1022705633E00F83F3D /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		72E1D1002705621700F83F3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72E1D1042705637900F83F3D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72E1D1012705622400F83F3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72E1D0D3270561F900F83F3D /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +290,8 @@
 			files = (
 				72E1D0D4270561F900F83F3D /* ViewController.swift in Sources */,
 				72E1D0D0270561F900F83F3D /* AppDelegate.swift in Sources */,
+				72E1D1032705633E00F83F3D /* Presenter.swift in Sources */,
+				72E1D1052705637900F83F3D /* User.swift in Sources */,
 				72E1D0D2270561F900F83F3D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
